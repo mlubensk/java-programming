@@ -6,8 +6,6 @@
 // The tree is a polygon that can be decorated with ornaments using mouse clicks. 
 // The default color for ornaments is red. The number in the top left corner is a count 
 // of the ornaments. The buttons labeled Blue and Red determine the color of ornaments. 
-// The buttons labeled Start and Stop implement a light show. When “Start” is pressed the 
-// lights blink. When “Stop” is pressed the blinking stops. New ornaments can be added 
 // during a light show. 
 //
 // Supplementary files: Ornament.java is needed to plot the ornaments.
