@@ -39,6 +39,7 @@ public class TreePanel extends JPanel implements ActionListener {
 			TOP_Y+240, TOP_Y+160, TOP_Y+160, TOP_Y+80, TOP_Y+80};
 	private ArrayList<Ornament> orns;
 	private JButton yellowButton = new JButton("Yellow");
+	private JButton orangeButton = new JButton("Orange");
 	private JButton redButton = new JButton("Red");
 	private JButton startButton = new JButton("Start"); //button to start light show
 	private JButton stopButton = new JButton("Stop"); //button to stop light show
@@ -59,6 +60,11 @@ public class TreePanel extends JPanel implements ActionListener {
 	    yellowButton.setOpaque(true);
 	    add(yellowButton,BorderLayout.NORTH);
 	    
+		orangeButton.addActionListener(this);
+	    orangeButton.setBackground(Color.orange);
+	    orangeButton.setOpaque(true);
+	    add(orangeButton,BorderLayout.NORTH);
+
 	    redButton.addActionListener(this);
 	    redButton.setBackground(Color.red);
 	    redButton.setOpaque(true);
@@ -79,7 +85,7 @@ public class TreePanel extends JPanel implements ActionListener {
 	    resetButton.setOpaque(true);
 	    add(resetButton,BorderLayout.NORTH);
 	    
-	    setBackground (Color.yellow);
+	    setBackground (Color.black);
 	    setPreferredSize (new Dimension(600, 500));
 	 }
 	
@@ -117,6 +123,11 @@ public class TreePanel extends JPanel implements ActionListener {
 		if (source == yellowButton){
 			clr = Color.yellow;
 		}
+
+		if (source == orangeButton){
+			clr = Color.orange;
+		}
+
 		if (source == redButton){
 			clr = Color.red;
 		}
